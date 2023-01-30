@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Sua aplicação para criptografar mensagens">
+        <title>Decodificador Alura</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+        <header class="conteudo-cabecalho">
+                <a href="https://www.alura.com.br/" target="_blank">
+                <img src="cabecalho_alura.png" alt="Logo da Alura"></a>
+
+                <a href="https://www.oracle.com/br/education/oracle-next-education/" target="_blank">
+                <img src="cabecalho_one.png" alt="Logo ONE"></a>
+
+                <a href="https://www.oracle.com/br/" target="_blank">
+                <img src="cabecalho_oracle.png" alt="Logo da Oracle"></a>
+		</header>
+
+        <main class="conteudo-principal">
+
+            <section>
+                <div class="borda-input">
+                    <div>
+                        <textarea id="input-area-texto" placeholder="Digite aqui..." ></textarea>
+                    </div>
+                </div>
+                <p>* Apenas letras minúsculas e sem acento.</p>  
+                <div>
+                    <button class="botao-criptografar" onclick="criptografar()">Criptografar</button>
+                    <button class="botao-descriptografar" onclick="descriptografar()">Descriptografar</button>
+                </div> 
+            </section>
+
+            <section>
+                <div class="borda-output">
+                    <div id="output-area-texto">
+                        <img id="imagem" src="principal_desenho_boneco_lupa.png">
+                        <div id="texto">
+                            <h2>Nenhuma mensagem encontrada</h2>
+                            <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                
+                <div>
+                    <button id="botao-copiar" onclick="copiarCriptografado()">Copiar</button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="conteudo-rodape">
+
+            <div class="texto">
+                <p> <strong>Celso Luiz de Oliveira</strong></p>
+            </div>
+
+            <div class="links">
+                <ol>
+                    <div class="celso">
+                        <button id="botao-redes" onclick="Copiar()">
+                            <a href="https://www.linkedin.com/in/celsoluiz73/" target="_blank">
+                            <img src="rodape_linkedin.png" class="img-social-networks-icon" alt="linkedin_social_5085"></a>
+                        </button>
+                    </div>
+
+                    <div class="celso">
+                        <button id="botao-redes" onclick="Copiar()">
+                            <a href="https://github.com/CelsoLuiz73" target="_blank">
+                            <img src="rodape_github.png" class="img-social-networks-icon" alt="Logo Github"></a>
+                        </button>
+                    </div>
+
+                    <div class="celso">
+                        <button id="botao-redes" onclick="Copiar()">
+                            <a href="https://twitter.com/Celsoluiz73" target="_blank">
+                            <img src="rodape_twitter.png"></a>
+                        </button>
+                    </div>
+
+                </ol>
+
+            </div>
+
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
